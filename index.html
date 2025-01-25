@@ -1,202 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio de Michael</title>
-        <script src="https://kit.fontawesome.com/ec399bef0c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!--Nav block-->
-        <nav>
-            <ul>
-                <li><a href="#abutme">About Me</a></li>
-                <li>|</li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li id="logo"><img src="./media/headphone.png" alt="headphone"></li>
-                <li><a href="#experience">Skills</a></li>
-                <li>|</li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-         <!--End of Nav block-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec399bef0c.js" crossorigin="anonymous"></script>
+    <title>Smart Alacena</title>
+</head>
+<body>
+    <!--Nav block-->
+    <nav>
+        <ul id="nav-bar">
+          <li id="logo">Smart Alacena</li>
+          <div id="nav-links">
+            <li><a href="#caract">Características</a></li>
+            <li><a href="#reviews">Reseñas</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </div>
+        <li id="nav-btn"><button type="button">Usala ya</button></li>
+        </ul>
+      </nav>
 
-        <article>
-            <!--Initial block-->
-            <section id="init">
-                <h2>Michael A. Hernández</h2>
-                <h3 class="hashtag">#programador</h3>
-                <h3 class="hashtag">#músico</h3>
-                <ul id="socials">
-                    <li><a href="https://open.spotify.com/" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
-                    <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </section>
+    <!--End of nav block-->
 
-            <!--End of initial block-->
+    <!--Article block-->
+    <article>
 
-            <!--About Me block-->
-            <section id="aboutme">
-                <div id="imgaboutme"><img class="aboutme_pic" src="./media/aboutme_picture.png" alt="About me picture"></div>
-                <div id="bodyaboutme">
-                    <h2>About Me</h2>
-                    <p> <strong>Lorem ipsum</strong>, dolor sit amet consectetur adipisicing elit. <span>Beatae enim nesciunt ipsam ad alias tempore corrupti</span> numquam pariatur eius. <cite> Tempora voluptates adipisci mollitia ipsum, minus rem. Magni ipsum non praesentium.</cite>dolor sit amet consectetur adipisicing elit.  Beatae enim nesciunt ipsam ad alias tempore corrupti numquam pariatur eius. <cite> Tempora voluptates adipisci mollitia ipsum, minus rem. Magni ipsum non praesentium.</p>
-                    <div class="masinfo"><button type="button">MORE INFO</button></div>
+        <!--Landing block-->
+        <section id="landing">
+            <h2 class="slogan">Porque tu tiempo vale <br> mas que contar latas</h2>
+            <video autoplay loop width="1300">
+                <source src="./media/videos/box_with_cans_v2.mp4" type="video/mp4">
+            </video>
+            <h3 class="landing-h3">Empieza hoy a transformar tu alacena en un espacio perfectamente <br> organizado. Con <span class="verde">Smart Alacena</span>, todo está bajo control, <span class="amarillo">fácil y rápido</span>.</h3>
+            <button class="landing-btn" type="button">Más información</button>
+        </section>
+        <!--End of landing block-->
+
+        <!--Features block-->
+        <section id="caract">
+            <div class="caract-item">
+                <h2 class="caract-item-title">Escanea y guarda</h2>
+                <p class="caract-item-description">Con Smart Alacena, añadir productos a tu inventario es tan fácil como escanear el código de barras. La app reconoce automáticamente el producto, eliminando la necesidad de ingresarlo manualmente. Esto no solo ahorra tiempo, sino que también reduce errores comunes al registrar tus alimentos.</p>
+                <img class="caract-item-img" src="media/images/escanea_lata.png" alt="Persona escanea producto" width="910" height="511">
+                <hr class="divider"/>
+            </div>
+            <div class="caract-item inverted">
+                <h2 class="caract-item-title">Gestion automatica de inventario</h2>
+                <video class="caract-item-video" autoplay loop width="910" height="511">
+                    <source src="./media/videos/fridge_food_v2.mp4" type="video/mp4">
+                </video>
+                <p class="caract-item-description">Mantén un control preciso de tus productos sin esfuerzo. Smart Alacena registra las cantidades, fechas de caducidad y el estado de cada producto en tiempo real. Así, siempre sabrás exactamente qué tienes disponible y evitarás desperdiciar alimentos.</p>
+                <hr class="divider"/>
+            </div>
+            <div class="caract-item">
+                <h2 class="caract-item-title">Recibe alertas de caducidad</h2>
+                <p class="caract-item-description">Nunca más dejes que los alimentos se venzan sin darte cuenta. La app te enviará notificaciones oportunas cuando un producto esté cerca de su fecha de caducidad. De esta manera, puedes priorizar su uso y evitar desperdicios innecesarios.</p>
+                <img class="caract-item-img" src="media/images/expiration_date.jpg" alt="Persona escanea producto"  width="910" height="511">
+                <hr class="divider"/>
+            </div>
+            <div class="caract-item inverted">
+                <h2 class="caract-item-title">Sugerencias de recetas</h2>
+                <video class="caract-item-video" autoplay loop width="910" height="511">
+                    <source src="./media/videos/food_table_v2.mp4" type="video/mp4">
+                </video>
+                <p class="caract-item-description">Aprovecha al máximo lo que tienes en casa con recetas personalizadas basadas en tu inventario. Smart Alacena analiza los productos que ya tienes y sugiere recetas prácticas y deliciosas. ¡Deja que la creatividad culinaria fluya sin complicaciones!</p>
+            </div>
+        </section>
+        <!--End of features block-->
+
+        <!--Reviews block-->
+        <section id="reviews">
+            <h2 class="reviews-h2">Ya ellos empezaron a organizar ¿<span class="amarillo">Y tú</span>?</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <img class="profile-pic" src="media/images/person2.jpg" alt="Profile picture">
+                    </div>
+                    <p class="review-text">"Desde que uso Smart Alacena, mi cocina está más organizada que nunca. Antes siempre se me olvidaba qué tenía en mi despensa, ¡ahora no pierdo nada y ahorro mucho tiempo!"</p>
+                    <h3 class="review-name">- Carla Perez, ama de casa</h3>
                 </div>
-            </section>
-            <!--End of About Me block-->
-
-            <!--Portfolio block-->
-            <section id="portfolio">
-                <h2>Portfolio</h2>
-                <h3>Una mirada mas allá del texto</h3>
-                <div class="rowportfolio">
-                    <div class="card">
-                        <iframe width="250" src="https://www.youtube.com/embed/uh_ZTbPQIDk?si=k-rFHLNDquFmjwiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <h3>música</h3>
-                        <h4>concierto benicassim</h4>
-                        <div class="sep"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <div class="masinfo"><button type="button">MORE INFO</button></div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <img class="profile-pic" src="media/images/person1.jpg" alt="Profile picture">
                     </div>
-                    <div class="card">
-                        <img src="./media/imagen_portfolio.png" alt="Portfolio 2">
-                        <h3>música</h3>
-                        <h4>concierto benicassim</h4>
-                        <div class="sep"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <div class="masinfo"><button type="button">MORE INFO</button></div>
-                    </div>
-                    <div class="card">
-                        <img src="./media/imagen_portfolio.png" alt="Portfolio 3">
-                        <h3>música</h3>
-                        <h4>concierto benicassim</h4>
-                        <div class="sep"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <div class="masinfo"><button type="button">MORE INFO</button></div>
-                    </div>
-                    <div class="card">
-                        <img src="./media/imagen_portfolio.png" alt="Portfolio 4">
-                        <h3>música</h3>
-                        <h4>concierto benicassim</h4>
-                        <div class="sep"></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <div class="masinfo"><button type="button">MORE INFO</button></div>
-                    </div>
+                    <p class="review-text">"La función de notificaciones de caducidad me ha salvado de desperdiciar comida. Ahora siempre sé qué debo usar primero, y eso también me ha ayudado a ahorrar dinero."</p>
+                    <h3 class="review-name">- José Lugaro, estudiante universitario</h3>
                 </div>
-            </section>
-            <!--End of portfolio block-->
-
-            <!--Experience block-->
-            <section id="experience">
-                <h2>Experiencia & Skills</h2>
-                <h3>Lo que me ha marcado en mi experiencia profesional</h3>
-                <div class="gridexp">
-                    <div class="cardexp">
-                        <h2>Diseño web</h2>
-                        <h3 class="textleft">2018-2020</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <ul>
-                            <li><img src="./media/tecno_au.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_cu.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_html.png" alt="" height="15px"></li>
-                        </ul>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <img class="profile-pic" src="media/images/person4.jpg" alt="Profile picture">
                     </div>
-                    <div class="cardexp">
-                        <h2>Diseño web</h2>
-                        <h3 class="textleft">2018-2020</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <ul>
-                            <li><img src="./media/tecno_au.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_cu.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_html.png" alt="" height="15px"></li>
-                        </ul>
-                    </div>
-                    <div class="cardexp">
-                        <h2>Diseño web</h2>
-                        <h3 class="textleft">2018-2020</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <ul>
-                            <li><img src="./media/tecno_au.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_cu.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_html.png" alt="" height="15px"></li>
-                        </ul>
-                    </div>
-                    <div class="cardexp">
-                        <h2>Diseño web</h2>
-                        <h3 class="textleft">2018-2020</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <ul>
-                            <li><img src="./media/tecno_au.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_cu.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_html.png" alt="" height="15px"></li>
-                        </ul>
-                    </div>
-                    <div class="cardexp">
-                        <h2>Diseño web</h2>
-                        <h3 class="textleft">2018-2020</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <ul>
-                            <li><img src="./media/tecno_au.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_cu.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_html.png" alt="" height="15px"></li>
-                        </ul>
-                    </div>
-                    <div class="cardexp">
-                        <h2>Diseño web</h2>
-                        <h3 class="textleft">2018-2020</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <ul>
-                            <li><img src="./media/tecno_au.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_cu.png" alt="" height="15px"></li>
-                            <li><img src="./media/tecno_html.png" alt="" height="15px"></li>
-                        </ul>
-                    </div>
+                    <p class="review-text">"¡Me encanta lo fácil que es escanear los productos y tener mi inventario al día! Es una aplicación que realmente simplifica mi vida, especialmente cuando hago las compras."</p>
+                    <h3 class="review-name">- Ana Ramos, madre trabajadora</h3>
                 </div>
-            </section>
-            <!--End of experience block-->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <img class="profile-pic" src="media/images/person5.jpg" alt="Profile picture">
+                    </div>
+                    <p class="review-text">"Lo que más me gusta es la opción de recetas basadas en lo que tengo en casa. Ahora puedo cocinar sin preocuparme por salir a comprar ingredientes de último momento."</p>
+                    <h3 class="review-name">- Sofia Torres, chef aficionada</h3>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <img class="profile-pic" src="media/images/person6.jpg" alt="Profile picture">
+                    </div>
+                    <p class="review-text">"Nunca pensé que organizar mi alacena pudiera ser tan sencillo. Con Smart Alacena, todo está bajo control y sé exactamente qué tengo. ¡Es indispensable!"</p>
+                    <h3 class="review-name">- Maria Cuevas, emprendedora</h3>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <img class="profile-pic" src="media/images/person3.jpg" alt="Profile picture">
+                    </div>
+                    <p class="review-text">"La app no solo me ayuda a organizarme, también me da tranquilidad. Sé que no voy a olvidar qué tengo o cuándo algo vence. ¡Es la mejor herramienta para la cocina!"</p>
+                    <h3 class="review-name">- Fernando Santos, aficionado a la cocina</h3>
+                </div>
+            </div>
+        </section>
+        <!--End of reviews block-->
 
-            <!--Contact block-->
-            <section id="contact">
-                <h2>Contact</h2>
-                <h3>Send your questions</h3>
-                <form action="#">
-                    <div class="itemform">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" minlength="2" maxlength="64" size="32" required>
-                    </div>
-                    <div class="itemform">
-                        <label for="comapany">Comapany</label>
-                        <input type="text" id="company" name="company" minlength="2" maxlength="128" size="32">
-                    </div>
-                    <div class="itemform">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" minlength="6" maxlength="64" size="32" required>
-                    </div>
-                    <div class="itemform">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="35" rows="5"></textarea>
-                    </div>
-                    <div class="itemform">
-                        <input type="submit" name="send" value="CONTACT">
-                    </div>
-                </form>
-            </section>
-            <!--End of contact block-->
+        <!--Form block-->
+        <section id="formulario">
+            <h2>Sabemos que te gustó, envianos tu  <br>contacto y no te pierdas de lo nuevo</h2>
+            <form action="#">
+                <div class="item-form"Envíanos tu contacto si estas
+                interesado o si tienes alguna duda>
+                    <label for="name">Nombre  <i class="fa-regular fa-user"></i></label>
+                    <input placeholder="  Jhon Doe" type="text" name="name" id="name" minlength="2" maxlength="64" size="32" required>
+                </div>
+                <div class="item-form">
+                    <label for="email">Email  <i class="fa-regular fa-envelope"></i></label>
+                    <input placeholder="  jhon@doe.com" type="email" id="email" name="email" minlength="6" maxlength="64" size="32" required>
+                </div>
+                <div class="item-form">
+                    <label for="message">Mensaje  <i class="fa-regular fa-comment"></i></label>
+                    <textarea placeholder=" Smart Alacena es lo mejor porque..." name="message" id="message" cols="35" rows="5"></textarea>
+                </div>
+                <div class="item-form">
+                    <input type="submit" name="send" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <!--End of form block-->
 
-        </article>
-        <!--Footer block-->
-        <footer>
-            <ul>
-                <li class="logo"><img src="./media/headphone.png" alt="logo in footer"></li>
-                <li>Lorem ipsum dolor sit amet consectetur adipsicing elit</li>
-            </ul>
-        </footer>
-        <!--End of Footer block-->
-    </body>
+    </article>
+    <!--End of article block-->
+
+    <!--Footer block-->
+    <footer>
+        <ul>
+            <li>Privacidad</li>
+            <li>Términos</li>
+            <li>Sobre nostros</li>
+            <li>Más reseñas</li>
+        </ul>
+    </footer>
+    <!--End of footer block-->
+</body>
 </html>

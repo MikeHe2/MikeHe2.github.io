@@ -1,0 +1,288 @@
+/* Global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font: 400 24px 'Nunito', sans-serif;
+}
+section {
+    padding: 10px 100px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+i{
+    font-size: 18px;
+}
+span.verde{
+    color: #01875a;
+}
+span.amarillo{
+    color:#ffb848
+}
+
+
+/* Navbar */
+nav {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#nav-bar {
+    list-style: none;
+    text-align: left;
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+}
+#logo {
+    color: #01875a;
+    font-weight: bold;
+    font-size: 32px;
+    margin-right: 10px;
+    float: left;
+}
+#nav-links {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+#nav-links li a {
+    text-decoration: none;
+    color: #757575;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+#nav-links li a:hover {
+    color: black;
+}
+#nav-btn {
+    float: right;
+}
+#nav-btn button {
+    background-color: #ffb848;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#nav-btn button:hover {
+    background-color: #d9ac63;
+}
+
+
+/* Slogan and Landing */
+.slogan {
+    font-size: 84px;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 25px;
+}
+#landing {
+    text-align: center;
+    padding-top: 55px;
+}
+.landing video {
+    border-radius: 10px;
+}
+.landing-btn {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 4px solid #01875a;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 40px 0px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.landing-btn:hover {
+    background-color: #0ac184;
+    border: 4px solid #0ac184;
+}
+.landing-h3{
+    margin-top: 25px;
+}
+
+
+/* Características */
+#caract {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 70px;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+.caract-item {
+    display: grid;
+    grid-template-columns: 300px 1000px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.caract-item.inverted {
+    grid-template-columns: 1000px 300px; /*Para las caracteristicas invertidas*/
+}
+.caract-item-title {
+    grid-column: 1/-1;
+    color: #01875a;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.caract-item-description {
+    font-size: 18px;
+}
+.caract-item-img, .caract-item-video {
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+    border-radius: 10px;
+}
+.divider {
+    grid-column: 1/-1;
+    border: none;
+    border-top: 1px solid #6d6d6d;
+    margin-top: 60px;
+}
+
+
+/* Reseñas */
+#reviews h2{
+    margin-top: 40px;
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px); /*Crea 3 columnas*/
+    gap: 100px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+    margin: 40px
+}
+.review-card {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 260px;
+    min-height: 400px;
+    max-height: auto;
+}
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.stars {
+    font-size: 18px;
+    color: #ffc107;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.review-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 15px 0;
+    flex-grow: 1;
+}
+.review-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-top: 10px;
+}
+.reviews-h2{
+    grid-row: 1/-1;
+    text-align: center;
+}
+
+/* Form */
+#formulario {
+    background-color: #01875a;
+}
+#formulario h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px;
+    color: #ffb848;
+}
+.item-form {
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin: 20px;
+}
+.item-form label {
+    color: black;
+    font-weight: 400;
+    justify-self: flex-end;
+    margin-right: 20px;
+}
+.item-form input, .item-form textarea {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type="submit"] {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffb848;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #ffb848;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 50px;
+    background-color: #f8f8f8;
+    color: #757575;
+    font-size: 18px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+footer li {
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+footer li:hover {
+    color: black;
+}
